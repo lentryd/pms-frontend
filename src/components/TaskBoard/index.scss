@@ -1,0 +1,33 @@
+.column-header {
+  @media (prefers-color-scheme: dark) {
+    color: $md-sys-color-inverse-on-surface-dark !important;
+    background-color: $md-sys-color-inverse-surface-dark !important;
+  }
+
+  @media (prefers-color-scheme: light) {
+    color: $md-sys-color-inverse-on-surface-light !important;
+    background-color: $md-sys-color-inverse-surface-light !important;
+  }
+}
+
+.column-content {
+  @media (prefers-color-scheme: dark) {
+    background-color: lighten($md-sys-color-surface-dark, 5%) !important;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background-color: lighten($md-sys-color-surface-variant-light, 5%) !important;
+  }
+}
+
+.column-task {
+  @media (prefers-color-scheme: dark) {
+    color: $md-sys-color-on-secondary-dark !important;
+    background: $md-sys-color-secondary-dark;
+  }
+
+  @media (prefers-color-scheme: light) {
+    color: $md-sys-color-on-secondary-light !important;
+    background: $md-sys-color-secondary-light;
+  }
+}
